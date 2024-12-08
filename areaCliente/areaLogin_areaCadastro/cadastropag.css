@@ -1,0 +1,115 @@
+/* Resetando o estilo padrão e garantindo que o layout seja adequado */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo o estilo para o body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #00b894;
+    display: flex;
+    flex-direction: column; /* Organiza os itens verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Garante que a altura da tela seja 100% */
+    margin: 0;
+}
+
+/* Estilos para o header */
+header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Logo ClinVita */
+header .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Texto de boas-vindas */
+header .texto-bem-vindo {
+    font-size: 1.1rem;
+    color: white;
+}
+
+/* Container do formulário */
+.form-container {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 360px; /* Formulário um pouco menor */
+    margin-top: 20px; /* Distância do topo */
+}
+
+/* Título do formulário */
+.form-container h2 {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos campos de input */
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="address"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Estilo do botão de envio */
+button[type="submit"] {
+    background-color: #00b894;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+button[type="submit"]:hover {
+    background-color: #019c6f;
+}
+
+/* Estilo do link de redirecionamento */
+.texto-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #555;
+}
+
+.texto-link a {
+    color: #00b894;
+    text-decoration: none;
+}
+
+.texto-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 480px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    .form-container h2 {
+        font-size: 1.5rem;
+    }
+}
